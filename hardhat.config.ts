@@ -7,6 +7,7 @@ import "@nomicfoundation/hardhat-chai-matchers";
 import "@openzeppelin/hardhat-upgrades";
 import "hardhat-gas-reporter";
 import "@primitivefi/hardhat-dodoc";
+import "hardhat-interface-generator";
 
 import * as dotenv from "dotenv";
 dotenv.config();

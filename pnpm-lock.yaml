@@ -6,6 +6,7 @@ specifiers:
   '@nomicfoundation/hardhat-network-helpers': ^1.0.0
   '@nomicfoundation/hardhat-toolbox': ^3.0.0
   '@nomicfoundation/hardhat-verify': ^1.1.1
+  '@openzeppelin/contracts': ^4.9.3
   '@openzeppelin/hardhat-upgrades': ^2.2.1
   '@primitivefi/hardhat-dodoc': ^0.2.3
   '@typechain/ethers-v6': ^0.4.3
@@ -17,10 +18,14 @@ specifiers:
   ethers: ^6.4.0
   hardhat: ^2.17.1
   hardhat-gas-reporter: ^1.0.9
+  hardhat-interface-generator: ^0.0.6
   solidity-coverage: ^0.8.0
   ts-node: '>=8.0.0'
   typechain: ^8.3.1
   typescript: '>=4.5.0'
+
+dependencies:
+  '@openzeppelin/contracts': 4.9.3
 
 devDependencies:
   '@nomicfoundation/hardhat-chai-matchers': 2.0.2_pnqt62wdsvqevp5tyyy7ok2cvm
@@ -39,6 +44,7 @@ devDependencies:
   ethers: 6.7.1
   hardhat: 2.17.1_kg5gpyde6u3komamnnl67a6oc4
   hardhat-gas-reporter: 1.0.9_hardhat@2.17.1
+  hardhat-interface-generator: 0.0.6_hardhat@2.17.1
   solidity-coverage: 0.8.4_hardhat@2.17.1
   ts-node: 10.9.1_g7jholkuun7ynigvuvf56f7tgu
   typechain: 8.3.1_typescript@5.1.6
@@ -883,6 +889,10 @@ packages:
       '@nomicfoundation/solidity-analyzer-win32-x64-msvc': 0.1.1
     dev: true
 
+  /@openzeppelin/contracts/4.9.3:
+    resolution: {integrity: sha512-He3LieZ1pP2TNt5JbkPA4PNT9WC3gOTOlDcFGJW4Le4QKqwmiNJCRt44APfxMxvq7OugU/cqYuPcSBzOw38DAg==}
+    dev: false
+
   /@openzeppelin/defender-admin-client/1.48.0_debug@4.3.4:
     resolution: {integrity: sha512-MN29JD6jA3PgOxF2tG0aZbMIwOCieYWkK9UbHCq1UzGPrMgGV9NVMUyVdqpv7Ynplwsjp5ZTBDOyttwvTlchHg==}
     dependencies:
@@ -1248,6 +1258,14 @@ packages:
 
   /abbrev/1.0.9:
     resolution: {integrity: sha512-LEyx4aLEC3x6T0UguF6YILf+ntvmOaWsVfENmIW0E9H09vKlLDGelMjjSm0jkDHALj8A8quZ/HapKNigzwge+Q==}
+    dev: true
+
+  /abi2solidity/0.1.2:
+    resolution: {integrity: sha512-vt67G1tgAGZiN8npK7ad464FB/IHUDrPQO/U3M2KCkyI9u8Z//P9UzRKMwsBc7ZaQiGJ++jAg1+gmAqmDs8Vog==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+    dependencies:
+      commander: 2.20.3
     dev: true
 
   /abstract-level/1.0.3:
@@ -1927,6 +1945,10 @@ packages:
       chalk: 2.4.2
       table-layout: 1.0.2
       typical: 5.2.0
+    dev: true
+
+  /commander/2.20.3:
+    resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
     dev: true
 
   /commander/3.0.2:
@@ -2896,6 +2918,15 @@ packages:
       sha1: 1.1.1
     transitivePeerDependencies:
       - '@codechecks/client'
+    dev: true
+
+  /hardhat-interface-generator/0.0.6_hardhat@2.17.1:
+    resolution: {integrity: sha512-VRu5/oOttVb4p/59kK5GL2eyuriPNmZX630tL/FB4bizZ99T5WEWY3rWTMmIvj+FgWBvIvj1FdVo+x4f2okv/w==}
+    peerDependencies:
+      hardhat: ^2.0.0
+    dependencies:
+      abi2solidity: 0.1.2
+      hardhat: 2.17.1_kg5gpyde6u3komamnnl67a6oc4
     dev: true
 
   /hardhat/2.17.1_kg5gpyde6u3komamnnl67a6oc4:

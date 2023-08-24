@@ -1,4 +1,4 @@
-# Lock
+# Ownable
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-
+*Contract module which provides a basic access control mechanism, where there is an account (an owner) that can be granted exclusive access to specific functions. By default, the owner account will be the one that deploys the contract. This can later be changed with {transferOwnership}. This module is used through inheritance. It will make available the modifier `onlyOwner`, which can be applied to your functions to restrict their use to the owner.*
 
 ## Methods
 
@@ -54,34 +54,6 @@ function transferOwnership(address newOwner) external nonpayable
 |---|---|---|
 | newOwner | address | undefined |
 
-### unlockTime
-
-```solidity
-function unlockTime() external view returns (uint256)
-```
-
-
-
-
-
-
-#### Returns
-
-| Name | Type | Description |
-|---|---|---|
-| _0 | uint256 | undefined |
-
-### withdraw
-
-```solidity
-function withdraw() external nonpayable
-```
-
-
-
-
-
-
 
 
 ## Events
@@ -102,23 +74,6 @@ event OwnershipTransferred(address indexed previousOwner, address indexed newOwn
 |---|---|---|
 | previousOwner `indexed` | address | undefined |
 | newOwner `indexed` | address | undefined |
-
-### Withdrawal
-
-```solidity
-event Withdrawal(uint256 amount, uint256 when)
-```
-
-
-
-
-
-#### Parameters
-
-| Name | Type | Description |
-|---|---|---|
-| amount  | uint256 | undefined |
-| when  | uint256 | undefined |
 
 
 
