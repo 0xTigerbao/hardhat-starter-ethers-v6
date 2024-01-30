@@ -8,6 +8,8 @@ import "@openzeppelin/hardhat-upgrades";
 import "hardhat-gas-reporter";
 import "@primitivefi/hardhat-dodoc";
 import "hardhat-interface-generator";
+import "@uniswap/hardhat-v3-deploy";
+import "uniswap-v2-deploy-plugin";
 
 import * as dotenv from "dotenv";
 dotenv.config();
