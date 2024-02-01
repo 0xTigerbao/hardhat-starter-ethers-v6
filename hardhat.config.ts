@@ -33,6 +33,11 @@ const config: HardhatUserConfig = {
       url: "https://nd-072-371-713.p2pify.com/fe6358e09128eff5f6afb11fcade6b83",
       accounts: [process.env.PRIVATE_KEY as string],
     },
+    hardhat: {
+      forking: {
+        url: "https://rpc.ankr.com/eth",
+      },
+    },
   },
   etherscan: {
     apiKey: {
